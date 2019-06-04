@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  helloworld:
+    image: helloworld:latest
+  webserver:
+    image: webserver:latest
+    ports:
+      - "8000:80"
