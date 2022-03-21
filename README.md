@@ -7,4 +7,4 @@ Repository containing the resources used at the Docker-Day in ICT-Campus.
 - [helloworld](./helloworld)
 - [webserver](./webserver)
 - [gitea](./gitea)
-- [jswiki](./jswiki)
+- [wikijs](./wikijs)

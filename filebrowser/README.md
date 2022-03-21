@@ -21,7 +21,7 @@ touch filebrowser.db
 Start the container:
 
 ```bash
-docker run -d --name filebrowser -v /home/technat/code/docker-ict-campus-demo/filebrowser/filebrowser.db:/database.db -p 8080:80 --mount source=filebrowser,target=/src filebrowser/filebrowser
+docker run -d --name filebrowser -v <PATH to Repo>/filebrowser/filebrowser.db:/database.db -p 8080:80 --mount source=filebrowser,target=/src filebrowser/filebrowser
 ```
 
 You can find the UI at [http://localhost:8080](http://localhost:8080). PW: `admin`, User: `admin`
