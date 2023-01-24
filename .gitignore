@@ -1,3 +1,4 @@
-gitea/data
-jswiki/wiki.sqlite
-filebrowser/filebrowser.db
+advanced/gitea/*data
+advanced/wikijs/wiki.sqlite
+advanced/filebrowser/filebrowser.db
+advanced/filebrowser/data
