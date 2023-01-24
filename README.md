@@ -15,7 +15,7 @@ This repo contains several exercises to practive working with containers and doc
 
 ### Advanced
 
-- [Highly available webserver](./beginner/webserver-ha)
+- [Highly available webserver](./advanced/webserver-ha)
 - [Gitea](./advanced/gitea)
 - [wikijs](./advanced/wikijs/)
 - [filebrowser](./advanced/filebrowser/)
