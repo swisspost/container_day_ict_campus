@@ -17,10 +17,7 @@ RUN apk add --no-cache apache2
 
 # Copy the html file into the container at /var/www/localhost/htdocs/
 #  with ah '.' you can add a whole direcotry to the docker container
-COPY html_template_webserver.html /var/www/localhost/htdocs/
-
-# Change the name of the HTML File
-RUN mv index.html index.html
+COPY index.html /var/www/localhost/htdocs/
 
 # Change the permissions of the HTML file (755=rwx,rx,rx)
 RUN chmod 755 index.html

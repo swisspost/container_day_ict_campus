@@ -1,4 +1,4 @@
-# JSWiki
+# JSWiki - solution
 
 To start the wikijs container you need the following command:
 

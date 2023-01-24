@@ -1,4 +1,4 @@
-# Filebrowser
+# Filebrowser - solution
 
 First create the empty DB file:
 

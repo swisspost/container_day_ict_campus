@@ -1,4 +1,4 @@
-# Gitea
+# Gitea - solution
 
 ## Database
 

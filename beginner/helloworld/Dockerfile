@@ -7,7 +7,7 @@ FROM alpine:latest
 #  on older versions the command "MAINTAINER" is used
 #  and this is depricated! The new way to set
 #  the maintainer is with the "LABEL" (see below)
-LABEL maintainer="patrick.buehlmann.1@post.ch"
+LABEL maintainer="nathanael.liechti@post.ch"
 
 # Set the working directory inside of the container
 # The WORKDIR instruction sets the working directory for any 
@@ -29,5 +29,3 @@ RUN chmod 751 hello_world_bash_script.sh
 # Run hello_world_bash_script.sh when the container launches
 CMD "/hello_world_bash_script.sh"
 
-# the same above in an on-liner:
-# docker run alpine:latest "echo" "Hello World"

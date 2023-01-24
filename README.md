@@ -11,7 +11,7 @@ This repo contains several exercises to practive working with containers and doc
 ### Beginner
 
 - [Hello World](./beginner/hello-world)
-- [Webserver](./beginner/websever)
+- [Webserver](./beginner/webserver)
 
 ### Advanced
 

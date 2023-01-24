@@ -1,31 +1,19 @@
-# webserver Example:
-Change to the webserver directory:  
-```
-cd example-webserver  
-```
+# Webserver
 
-Build the new "webserver" docker image with the tag "latest":  
-```
-docker build -t "webserver:latest" . 
-```
+This exercise is about building a custom image using a `Dockerfile`.
 
-Run the docker container with "docker run":  
-```
-docker run -p 8000:80 -d webserver
-```
+Write a new dockerfile that:
+- uses `alpine:latest` as base
+- installs `httpd` as webserver
+- creates a workding directory in `/var/www/localhost/htdocs`
+- copies the index.html into this directory
+- ensures the correct permissions (755) on the index.html
+- sets the entrypoint directive to start `httpd`
+- sets the CMD directive to run in foreground
+- exposes port 80
 
-Stop and delete the running docker container:  
-```
-docker stop <container_id>  
-docker rm <container_id>  
-```
+Then build the dockerfile to an image named `webserver:latest` and run it so that [http://localhost:8080](http://localhost:8080) displays your simple HTML page.
 
-Start the docker container with the docker-compose file (for automation):  
-```
-docker-compose -f /docker_data/docker-ict-campus-demo/example-webserver/docker-compose.yml up -d
-```
+## Solution
 
-Stop the docker container with the docker-compose file:  
-```
-docker-compose -f /docker_data/docker-ict-campus-demo/example-webserver/docker-compose.yml down
-```
+See the [Dockerfile](./Dockerfile) for a working example and [here](./solution.md) for the commands to build and run it.
