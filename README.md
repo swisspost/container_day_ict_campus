@@ -10,7 +10,7 @@ This repo contains several exercises to practive working with containers and doc
 
 ### Beginner
 
-- [Hello World](./beginner/hello-world)
+- [Hello World](./beginner/helloworld)
 - [Webserver](./beginner/webserver)
 
 ### Advanced
