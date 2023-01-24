@@ -7,7 +7,7 @@ FROM alpine:latest
 #  on older versions the command "MAINTAINER" is used
 #  and this is depricated! The new way to set
 #  the maintainer is with the "LABEL" (see below)
-LABEL maintainer="patrick.buehlmann.1@post.ch"
+LABEL maintainer="nathanael.liechti@post.ch"
 
 # Set the working directory to /var/www/localhost/htdocs/
 WORKDIR /var/www/localhost/htdocs/
@@ -20,7 +20,7 @@ RUN apk add --no-cache apache2
 COPY html_template_webserver.html /var/www/localhost/htdocs/
 
 # Change the name of the HTML File
-RUN mv html_template_webserver.html index.html
+RUN mv index.html index.html
 
 # Change the permissions of the HTML file (755=rwx,rx,rx)
 RUN chmod 755 index.html
