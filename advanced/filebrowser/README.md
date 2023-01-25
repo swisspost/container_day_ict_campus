@@ -9,6 +9,7 @@ To run the contianer you need the following:
 - Name the container `filebrowser`
 - Mount a locally created directory `./data` inside the container at `/src`
 - Mount the local file (which you must create first) `./filebrowser.db` inside the container at `/database.db`
+- Use image `filebrowser/filebrowser`
 
 Consult their [docs](https://filebrowser.org/installation#docker) for more infos.
 
