@@ -10,6 +10,7 @@ Run a new wikijs container accoring to their [docs](https://docs.requarks.io/ins
 - mount the file ./wiki.sqlite (use absolut path) into /wiki/wiki.sqlite in the container (file will be created automatically if it doesn't exist)
 - expose port 3000 as 3000
 - run in detached mode
+- Use image `ghcr.io/requarks/wiki:2`
 
 If everything worked successfully you can open [http://localhost:3000] and finish the setup of the wiki.
 
