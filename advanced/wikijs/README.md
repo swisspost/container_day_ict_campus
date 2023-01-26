@@ -18,6 +18,28 @@ If everything worked successfully you can open [http://localhost:3000] and finis
 
 What is needed to run your installed wiki on another host? Which files would you need to backup?
 
+## Bonus 2
+
+Try to setup another high-available wikijs instance with a PostgresSQL DB instead of sqlite
+
+Some hints:
+
+- You need to put the containers in a separate network (`docker network create wikijs_postgres`, `--net wikijs_postgres`)
+- You need to run a postgres container (the internet has thousand examples)
+- Spin up three wikijs instances for HA
+- You need to configure wikijs to use the postgres database (see [here](https://docs.requarks.io/install/docker))
+- You need to set the env var `HA_ACTIVE=true` on the wikijs containers
+- Expose the containers on 3001,3002 and 3002
+
+## Super bonus
+
+If you have already done the [webserver-ha](../webserver-ha/) example, you may know what a reverse proxy is. If not go and do this example first. If you have already done it, do the following:
+
+- Copy the [Caddyfile](../webserver-ha/Caddyfile) to this directory
+- Edit the file so that it forwards to the three wiki containers and the correct ports
+- Run a new reverse_proxy container and expose it on port 80 and put it in the correct network ;)
+- Check if [http://localhost:80](http://localhost:80) shows the wiki
+
 ## Solution
 
 See [here](./solution.md)
