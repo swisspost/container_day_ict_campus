@@ -1,8 +1,8 @@
 # Filebrowser
 
-[Filebrowser](https://filebroser.org) is a simple web-based filebrowser (file explorer) that you can use to share files with others, online them on the go or access volumes of other containers easily.
+[Filebrowser](https://filebroser.org) is a simple web-based filebrowser (file explorer) that you can use to share files with others or access volumes of other containers easily.
 
-To run the contianer you need the following:
+To run the container you need the following:
 
 - Port 80 exposed to the host as port 8080
 - Run in detached mode
