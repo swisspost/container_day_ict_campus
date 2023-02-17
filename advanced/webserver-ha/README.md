@@ -39,13 +39,13 @@ Now you might notice that we haven't exposed any ports on these containers to th
 
 If you want to know more about reserve proxies, checkout [this explanation](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/).
 
-We are using [caddy](https://caddyserver.com/) here as reserve proxy since the author of this exercise prefers caddy over nginx or apache which could also function as reserve proxies. The config for the reserve proxy is already written, see the [Caddyfile](./Caddyfile) if you are interested.
+We are using [caddy](https://caddyserver.com/) here as reserve proxy since the author of this exercise prefers caddy over nginx or apache, which are both reverse proxies too. The config for the reserve proxy is already written, see the [Caddyfile](./Caddyfile) if you are interested.
 
 Now to start the caddy as reverse proxy, run a new container with:
 - detached mode
-- network: webserver-ha
+- network: `webserver-ha`
 - name `caddy`
-- expose port 80 as 8080 on the host
+- expose port `8080` as `8080` on the host
 - mount the `./Caddyfile` into `/etc/caddy/Caddyfile` in the container
 
 If the caddy is started, you should be able to browse [http://localhost:8080](http://localhost:8080) and see a different page on every refresh.
