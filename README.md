@@ -20,3 +20,11 @@ This repo contains several exercises to practive working with containers and doc
 - [wikijs](./advanced/wikijs/)
 - [filebrowser](./advanced/filebrowser/)
 - [portainer](./advanced/portainer)
+
+### Expert
+
+If you want to go deeper into container and kubernetes checkout the following links:
+
+- [Quickstart on how to setup a k3s cluster](https://docs.k3s.io/quick-start)
+- [Setup Kubernetes the kubeadm way](https://technat.ch/posts/k8s_kubeadm/)
+- [Add more docker hosts to portainer](
