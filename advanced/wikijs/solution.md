@@ -58,7 +58,7 @@ docker run -d \
   postgres:11-alpine
 ```
 
-And then run a three wiki instances with the same postgres as backend:
+And then run three wiki instances with the same postgres as backend:
 
 ```bash
 docker run -d \
@@ -107,7 +107,7 @@ docker run -d \
 The Caddyfile would look something like that:
 
 ```Caddyfile
-:80 {
+:3333 {
   reverse_proxy  {
     to http://wiki_postgres1:3001 http://wiki_postgres2:3002 http://wiki_postgres3:3003 
     lb_policy random
@@ -121,7 +121,7 @@ And the new reverse_proxy would be started like that:
 docker run -d \
   --name wiki_caddy \
   --net wikijs_postgres \
-  -p 80:80 \
+  -p 3333:3333 \
   -v <Path to current directory>/Caddyfile:/etc/caddy/Caddyfile \
   caddy:latest
 ```
