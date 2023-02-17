@@ -7,8 +7,8 @@ Run a new wikijs container accoring to their [docs](https://docs.requarks.io/ins
 - Name the container `wiki`
 - set ENV var `DB_TYPE=sqlite`
 - set ENV var `DB_FILEPATH=/wiki/wiki.sqlite`
-- mount the file ./wiki.sqlite (use absolut path) into /wiki/wiki.sqlite in the container (file will be created automatically if it doesn't exist)
-- expose port 3000 as 3000
+- mount the file `./wiki.sqlite` (use absolut path) as `/wiki/wiki.sqlite` in the container (file will be created automatically if it doesn't exist)
+- expose port `3000` as `3000`
 - run in detached mode
 - Use image `ghcr.io/requarks/wiki:2`
 
