@@ -27,4 +27,5 @@ If you want to go deeper into container and kubernetes checkout the following li
 
 - [Quickstart on how to setup a k3s cluster](https://docs.k3s.io/quick-start)
 - [Setup Kubernetes the kubeadm way](https://technat.ch/posts/k8s_kubeadm/)
-- [Add more docker hosts to portainer](
+- [Add more docker hosts to portainer](https://markontech.com/devops/add-a-remote-docker-host-in-portainer/)
+- [How to write a best-practise Dockerfile](https://sysdig.com/blog/dockerfile-best-practices/)
