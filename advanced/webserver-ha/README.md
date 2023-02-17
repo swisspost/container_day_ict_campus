@@ -10,7 +10,7 @@ For each file, choose another background color and save them as `index1.html`, `
 
 ## Step 2 - Create a docker network
 
-We haven't talked about [docker networks](https://docs.docker.com/network/) so far, but think of them as separate virtual networks, just as you got multiple subnets in your virtualized environment. They are used to separate multiple containerized apps from each other and have the benefit that containers can directly resolve each other by their hostname (that's why it's important to give them a name using --name).
+We haven't talked about [docker networks](https://docs.docker.com/network/) so far, but think of them as separate virtual networks, just as you got multiple subnets in your virtualized environment. They are used to separate multiple containerized apps from each other and have the benefit that containers can directly resolve each other by their hostname (that's why it's important to give them a name using `--name`).
 
 For this app we are going to create our own network using `docker network create webserver-ha`. 
 
