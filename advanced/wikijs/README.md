@@ -29,7 +29,7 @@ Some hints:
 - Spin up three wikijs instances for HA
 - You need to configure wikijs to use the postgres database (see [here](https://docs.requarks.io/install/docker))
 - You need to set the env var `HA_ACTIVE=true` on the wikijs containers
-- Expose the containers on 3001,3002 and 3002
+- Expose one container on `3001` and the other on `3002`
 
 ## Super bonus
 
