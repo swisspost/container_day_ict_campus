@@ -29,7 +29,7 @@ Some hints:
 - Spin up three wikijs instances for HA
 - You need to configure wikijs to use the postgres database (see [here](https://docs.requarks.io/install/docker))
 - You need to set the env var `HA_ACTIVE=true` on the wikijs containers
-- Expose one container on `3001` and the other on `3002`
+- Expose one container on `3001` the second on `3002` and the third on `3003`
 
 ## Super bonus
 
@@ -37,8 +37,8 @@ If you have already done the [webserver-ha](../webserver-ha/) example, you may k
 
 - Copy the [Caddyfile](../webserver-ha/Caddyfile) to this directory
 - Edit the file so that it forwards to the three wiki containers and the correct ports
-- Run a new reverse_proxy container and expose it on port 80 and put it in the correct network ;)
-- Check if [http://localhost:80](http://localhost:80) shows the wiki
+- Run a new reverse_proxy container and expose it on port `3333` and put it in the correct network ;)
+- Check if [http://localhost:3333](http://localhost:3333) shows the wiki
 
 ## Solution
 
