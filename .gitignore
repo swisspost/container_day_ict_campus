@@ -2,3 +2,4 @@ advanced/gitea/*data
 advanced/wikijs/wiki.sqlite
 advanced/filebrowser/filebrowser.db
 advanced/filebrowser/data
+credentials.md
