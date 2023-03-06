@@ -9,11 +9,11 @@ See the three files [index1.html](./index1.html), [index2.html](./index2.html) a
 Use the following commands to run the three webservers:
 
 ```
-docker run -d --name webserver1 --net webserver-ha -v <Path to current directory>/index1.html:/var/www/localhost/htdocs/index.html webserver:latest
+docker run -d --name webserver1 --net webserver-ha  webserver:latest
 
-docker run -d --name webserver2 --net webserver-ha -v <Path to current directory>/index2.html:/var/www/localhost/htdocs/index.html webserver:latest
+docker run -d --name webserver2 --net webserver-ha  webserver:latest
 
-docker run -d --name webserver3 --net webserver-ha -v <Path to current directory>/index3.html:/var/www/localhost/htdocs/index.html webserver:latest
+docker run -d --name webserver3 --net webserver-ha  webserver:latest
 ```
 
 ## Step 4
