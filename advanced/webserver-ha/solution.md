@@ -2,9 +2,9 @@
 
 ## Step 1
 
-See the three files [index1.html](./index1.html), [index2.html](./index2.html) and [index3.html](./index3.html)
+`docker network create webserver-ha`
 
-## Step 3
+## Step 2
 
 Use the following commands to run the three webservers:
 
@@ -16,7 +16,7 @@ docker run -d --name webserver2 --net webserver-ha  webserver:latest
 docker run -d --name webserver3 --net webserver-ha  webserver:latest
 ```
 
-## Step 4
+## Step 3
 
 To run the reverse proxy use this command:
 
