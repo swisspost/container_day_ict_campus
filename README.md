@@ -26,9 +26,9 @@ You should have:
 ### Advanced
 
 - [Highly available webserver](./advanced/webserver-ha): High-available version of the static website using multiple webservers and a reverse-proxy
+- [filebrowser](./advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
 - [Gitea](./advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
 - [wikijs](./advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
-- [filebrowser](./advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
 - [portainer](./advanced/portainer): A Web-Interface for managing containers on docker hosts, kubernetes clusters and more
 
 ### Expert

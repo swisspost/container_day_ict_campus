@@ -4,7 +4,7 @@
 
 To run the container you need the following:
 
-- Port 80 exposed to the host as port 8080
+- Port `80` exposed to the host as port `8080`
 - Run in detached mode
 - Name the container `filebrowser`
 - Mount a locally created directory `./data` inside the container at `/src`
@@ -17,7 +17,7 @@ If everything was successful you can open the web-UI at [http://localhost:8080](
 
 ## Bonus
 
-Instead of the locally created `./data` directory use a docker volume mounted at `/src`.
+Instead of the locally created `./data` directory use a [docker volume](https://docs.docker.com/storage/volumes/).
 
 ## Solution
 

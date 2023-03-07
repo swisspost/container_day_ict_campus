@@ -31,9 +31,9 @@ docker rm wiki
 
 ## Bonus
 
-The only file that needs to be backed up is the wiki.sqlite file you mounted into the container. All data within the container is ephemeral and can be treated like that.
+The only file that needs to be backed up is the `wiki.sqlite` file you mounted into the container. All data within the container is ephemeral and can be treated like that.
 
-If you run the same command on another docker host, with the wiki.sqlite file copied there first, the wiki starts just as you would expect.
+If you run the same command on another docker host, with the `wiki.sqlite` file copied there first, the wiki starts just as you would expect.
 
 ## Bonus 2
 
