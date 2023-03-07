@@ -1,6 +1,6 @@
 :8080 {
   reverse_proxy  {
-    to http://webserver1:80 http://webserver2:80 http://webserver3:80 
+    to http://webserver1:8080 http://webserver2:8080 http://webserver3:8080
     lb_policy random
   }
 }

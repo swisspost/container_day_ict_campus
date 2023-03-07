@@ -24,7 +24,7 @@ To run the reverse proxy use this command:
 docker run -d \
   --name caddy \
   --net webserver-ha \
-  -p 8080:80 \
+  -p 8080:8080 \
   -v <Path to current directory>/Caddyfile:/etc/caddy/Caddyfile \
   caddy:latest
 ```
