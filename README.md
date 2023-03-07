@@ -8,8 +8,6 @@ Repository containing the resources used at the Container-Day in ICT-Campus.
 
 ## Exercises
 
-This repo contains several exercises to practice working with containers and docker.
-
 ### Prepare
 
 You should have:
