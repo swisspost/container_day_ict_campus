@@ -10,23 +10,17 @@ Note: they use docker-compose for the installation, you can just ignore this, we
 
 ## Network
 
-We haven't talked about [docker networks](https://docs.docker.com/network/) so far, but think of them as separate virtual networks, just as you got multiple subnets in your virtualized environment. They are used to separate multiple containerized apps from each other and have the benefit that containers can directly resolve each other by their hostname (that's why it's important to give them a name using --name).
-
-For this app we are going to create our own network using `docker network create gitea`. 
-
-You can find a list of all networks using `docker network ls`.
-
-To start a container in a separate network, run it using the `--net network_name` option.
+Create a new network `gitea` for this exercise.
 
 ## Database
 
-First you need a database container to connect to. We are using mysql for this here, but gitea supports [many database engines](https://docs.gitea.io/en-us/database-prep/).
+First you need a database container to connect to. We are using `mysql` for this here, but gitea supports [many database engines](https://docs.gitea.io/en-us/database-prep/).
 
-To start the mysql container configure the following options:
+To start the `mysql` container configure the following options:
 
-- Detached mode
+- detached mode
 - named `mysql` (so that we can connect to it by NAME:PORT)
-- Network: gitea
+- network `gitea`
 - using image `mysql:8`
 - set [restart-policy](https://docs.docker.com/config/containers/start-containers-automatically/) to `unless-stopped`
 - data in `/var/lib/mysql` should be mounted into the container from a local `./mysql_data` directory.
@@ -46,12 +40,12 @@ With the DB up, it's time to spin up the gitea server.
 
 You must configure the following:
 
-- Name: gita
-- Image: gitea/gitea:1
-- Network: gitea
+- name `gitea`
+- image `gitea/gitea:1`
+- network `gitea`
 - Restart Policy unless-stopped
-- Port 3000 exposed to the host as 3000
-- Port 22 exposed to the host as 222
+- Port `3000` exposed to the host as `3000`
+- Port `22` exposed to the host as `222`
 - A local `./gitea_data` directory mounted in `/data`
 - The host-file `/etc/localtime` and `/etc/timezone` mounted inside the container at the same location as read-only
 - The following environment variables inside the container:
