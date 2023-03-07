@@ -37,5 +37,5 @@ If you want to go deeper into container and kubernetes checkout the following li
 
 - [Quickstart on how to setup a k3s cluster](https://docs.k3s.io/quick-start): Docs how to setup a lightweight Kubernetes cluster (wait for the K8s intro first)
 - [Add more docker hosts to portainer](https://markontech.com/devops/add-a-remote-docker-host-in-portainer/): Scaling using multiple docker hosts managed by a single user-interface
-- [How to write a best-practise Dockerfile](https://sysdig.com/blog/dockerfile-best-practices/): To study, those are best-practices everyone should follow but 90% of containers outside don't
+- [How to write a best-practise Dockerfile](https://sysdig.com/blog/dockerfile-best-practices/): To study, those are best-practices everyone should follow but 90% of containers don't (which makes them very insecure)
 - [Setup Kubernetes the kubeadm way](https://technat.ch/posts/k8s_kubeadm/): Searching something to do in your project week? This could be your project! Setting up kubernetes using kubeadm is time-intensive but helps you really learn how kubernetes works. Only recommended for people that want to go deep into the topic
