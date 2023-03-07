@@ -1,20 +1,21 @@
 # Hello World
 
-In this exercise you should create a new dockerfile that prints "Hello World" to stdout when the container is started and then exits.
+In this exercise you should create a new Dockerfile that starts a bash script and then exits. The script is already provided to you (see the [script.sh](./script.sh))
 
 Here are the different steps:
+
 - use `alpine:latest` as base
 - set the workdir to `/`
 - install `bash`
-- copy the hello_world_bash_script.sh into the container 
-- set the permissions on the shell script to 751
+- copy the script.sh into the container
+- set the permissions on the shell script to 755
 - set the CMD directive to run the script at start
 
 Run the container in foreground and check that "Hello World" get's printed.
 
 ## Bonus
 
-Try to find a faster way to print "Hello World" to stdout with a container
+Try to find a faster way to print "Hello World" with a container without building your own Dockerfile.
 
 ## Solution
 

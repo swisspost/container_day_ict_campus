@@ -21,11 +21,11 @@ RUN apk add --no-cache bash
 
 # Copy the bash script into the container at /
 #  with ah '.' you can add a whole direcotry to the docker container
-COPY hello_world_bash_script.sh /
+COPY script.sh /
 
 # Change the permissions of the script (751=rwx,rx,x)
-RUN chmod 751 hello_world_bash_script.sh
+RUN chmod 751 script.sh
 
 # Run hello_world_bash_script.sh when the container launches
-CMD "/hello_world_bash_script.sh"
+CMD "/script.sh"
 

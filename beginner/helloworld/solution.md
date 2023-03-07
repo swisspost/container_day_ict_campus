@@ -1,12 +1,14 @@
 # Hello World - solution
 
 Build the new "helloworld" docker image with the tag "latest":  
+
 ```
 docker build -t "helloworld:latest" .  
 ```
 
 Run the docker container with "docker run":  
-```
+
+```console
 docker run helloworld:latest  
 ```
 
