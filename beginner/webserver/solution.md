@@ -6,13 +6,13 @@ Build the new "webserver" docker image with the tag "latest":
 docker build -t "webserver:latest" . 
 ```
 
-Run the docker container with "docker run":  
+Run the docker container with "docker run" in detached mode:  
 
 ```
 docker run -d --name nginx-webserver -p 8080:8080 webserver:latest
 ```
 
-Find the container's id:
+Find the container's id or name:
 
 ```bash
 $ docker ps
