@@ -14,9 +14,11 @@ There's also a short introduction to Kubernetes to show that there's more than j
 
 ## Exercises
 
+Those are exercises that guide you through running pre-built and self-built containers using docker. It's recommended to go through the exercises in the order they are listed below.
+
 ### Prepare
 
-You should have:
+To run the exercises you must have:
 
 - cloned the repo
 - docker [installed](https://docs.docker.com/engine/install/ubuntu/)
