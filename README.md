@@ -1,6 +1,12 @@
 # Container Day ICT-Campus
 
-Repository containing the resources used at the Container-Day in ICT-Campus.
+Introduction to containers for trainees of SwissPost
+
+## About
+
+The container day is a one-day workshop that teaches trainees in their frist year of apprenticeship the basics about containers. The goal in the end of this workshop is, that everyone is comfortable building their own images and running containers using Docker on a single host.
+
+There's also a short introduction to Kubernetes to show that there's more than just plain Docker.
 
 ## Help
 
@@ -13,7 +19,7 @@ Repository containing the resources used at the Container-Day in ICT-Campus.
 You should have:
 
 - cloned the repo
-- docker installed
+- docker [installed](https://docs.docker.com/engine/install/ubuntu/)
 - an editor installed
 
 **Note: for every exercise it's important that you change inside it's directory using `cd`, otherwise the solutions won't work.**
