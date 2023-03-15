@@ -19,8 +19,8 @@ docker run -d \
   --name filebrowser \
   -p 8080:80 \
   -v <PATH to current directory>/filebrowser/filebrowser.db:/database.db \
-  -v <Path to current directory>/data:/src
-  --mount source=filebrowser,target=/src \
+  -v <Path to current directory>/data:/srv
+  --mount source=filebrowser,target=/srv \
   filebrowser/filebrowser
 ```
 
@@ -50,7 +50,7 @@ docker volume create filebrowser
 And use the following parameter in the docker-run command:
 
 ```bash
---mount source=filebrowser,target=/src
+--mount source=filebrowser,target=/srv
 ```
 
 e.g:
@@ -60,6 +60,6 @@ docker run -d \
   --name filebrowser \
   -p 8080:80 \
   -v <PATH to current directory>/filebrowser/filebrowser.db:/database.db \
-  --mount source=filebrowser,target=/src \
+  --mount source=filebrowser,target=/srv \
   filebrowser/filebrowser
 ```
