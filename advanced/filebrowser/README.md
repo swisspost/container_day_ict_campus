@@ -8,7 +8,7 @@ To run the container you need the following:
 - Run in detached mode
 - Name the container `filebrowser`
 - Mount a locally created directory `./data` inside the container at `/srv`
-- Mount the local file (which you must create first) `./filebrowser.db` inside the container at `/database.db`
+- Mount the local file (which you must create first) `./filebrowser.db` inside the container at `/.database.db`
 - Use image `filebrowser/filebrowser`
 
 Consult their [docs](https://filebrowser.org/installation#docker) for more infos.
