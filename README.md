@@ -24,6 +24,12 @@ To run the exercises you must have:
 - docker [installed](https://docs.docker.com/engine/install/ubuntu/)
 - an editor installed
 
+To start with, [installing](https://docs.portainer.io/start/install-ce/server/docker/linux) Portainer can help:
+```bash
+docker volume create portainer_data 
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
 **Note: for every exercise it's important that you change inside it's directory using `cd`, otherwise the solutions won't work.**
 
 ### Beginner
@@ -37,7 +43,6 @@ To run the exercises you must have:
 - [filebrowser](./advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
 - [Gitea](./advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
 - [wikijs](./advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
-- [portainer](./advanced/portainer): A Web-Interface for managing containers on docker hosts, kubernetes clusters and more
 
 ### Expert
 
