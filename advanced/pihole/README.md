@@ -5,8 +5,8 @@
 To run the container you need the following:
 
 - Expose port `80` to the host as port `8080`
-- Expose port `53/udp` to the host as port `53/udp`
-- Expose port `53/tcp` to the host as port `53/tcp`
+- Expose port `53/udp` to the host as port `1053/udp`
+- Expose port `53/tcp` to the host as port `1053/tcp`
 - Set timezone to `Europe/Zurich` with the environment variable `TZ`
 - Set admin password with the environment variable `WEBPASSWORD`
 - Name the container `pihole`
