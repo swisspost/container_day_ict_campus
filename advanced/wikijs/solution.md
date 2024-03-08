@@ -1,5 +1,11 @@
 # JSWiki - solution
 
+First of all you need to create the database file:
+```bash
+touch wiki.sqlite
+chmod 744 wiki.sqlite
+```
+
 To start the wikijs container you need the following command:
 
 ```bash
@@ -7,8 +13,8 @@ docker run -d \
   --name wiki \
   -p 3000:3000 \
   -e "DB_TYPE=sqlite" \
-  -e "DB_FILEPATH=/wiki/wiki.sqlite" 
-  -v "<Path to the current directory>/wiki.sqlite:/wiki/wiki.sqlite" 
+  -e "DB_FILEPATH=/wiki/wiki.sqlite" \
+  -v "<Path to the current directory>/wiki.sqlite:/wiki/wiki.sqlite" \
   ghcr.io/requarks/wiki:2
 ```
 
@@ -108,8 +114,8 @@ The Caddyfile would look something like that:
 
 ```Caddyfile
 :3333 {
-  reverse_proxy  {
-    to http://wiki_postgres1:3001 http://wiki_postgres2:3002 http://wiki_postgres3:3003 
+  reverse_proxy {
+    to http://wiki_postgres1:3000 http://wiki_postgres2:3000 http://wiki_postgres3:3000
     lb_policy random
   }
 }

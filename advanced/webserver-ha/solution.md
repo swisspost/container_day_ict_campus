@@ -2,7 +2,9 @@
 
 ## Step 1
 
-`docker network create webserver-ha`
+```bash
+docker network create webserver-ha
+```
 
 ## Step 2
 

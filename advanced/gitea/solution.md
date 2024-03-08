@@ -1,5 +1,13 @@
 # Gitea - solution
 
+## Network
+
+Create the bridge network `gitea`:
+
+```bash
+docker network create -d bridge gitea
+```
+
 ## Database
 
 To run the database container you need to first create the data directory and then start it:

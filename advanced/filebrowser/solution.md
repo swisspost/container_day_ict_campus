@@ -19,8 +19,7 @@ docker run -d \
   --name filebrowser \
   -p 8080:80 \
   -v <PATH to current directory>/filebrowser/.filebrowser.db:/.database.db \
-  -v <Path to current directory>/data:/srv
-  --mount source=filebrowser,target=/srv \
+  -v <Path to current directory>/data:/srv \
   filebrowser/filebrowser
 ```
 
