@@ -2,4 +2,7 @@ advanced/gitea/*data
 advanced/wikijs/wiki.sqlite
 advanced/filebrowser/filebrowser.db
 advanced/filebrowser/data
+advanced/linkwarden/pgdata
+advanced/pihole/dnsmasq.d
+advanced/pihole/pihole
 credentials.md

@@ -11,7 +11,7 @@ Here are the different steps:
 - set the permissions on the shell script to 755
 - set the CMD directive to run the script at start
 
-Run the container in foreground and check that "Hello World" get's printed.
+Build an image and run a container in foreground and check that "Hello World" get's printed.
 
 ## Bonus
 
