@@ -36,17 +36,17 @@ Now you can visit the admin dashboard in the browser:`http://localhost:9000`
 
 ### Beginner
 
-- [Hello World](./beginner/helloworld): Very basic dockerfile that runs a bash script at startup (same as in live demo)
-- [Webserver](./beginner/webserver): Very simple webserver that presents a static website
+- [Hello World](./exercises/beginner/helloworld): Very basic dockerfile that runs a bash script at startup (same as in live demo)
+- [Webserver](./exercises/beginner/webserver): Very simple webserver that presents a static website
 
 ### Advanced
 
-- [Highly available webserver](./advanced/webserver-ha): High-available version of the static website using multiple webservers and a reverse-proxy
-- [filebrowser](./advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
-- [Gitea](./advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
-- [wikijs](./advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
-- [pihole](./advanced/pihole/): Advertisement and internet tracker blocking application
-- [linkwarden](./advanced/linkwarden/): Collaborative bookmark manager
+- [Highly available webserver](./exersises/advanced/webserver-ha): High-available version of the static website using multiple webservers and a reverse-proxy
+- [filebrowser](./exersises/advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
+- [Gitea](./exersises/advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
+- [wikijs](./exersises/advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
+- [pihole](./exersises/advanced/pihole/): Advertisement and internet tracker blocking application
+- [linkwarden](./exersises/advanced/linkwarden/): Collaborative bookmark manager
 
 ### Expert
 
