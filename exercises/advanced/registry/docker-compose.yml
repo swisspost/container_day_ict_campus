@@ -1,0 +1,11 @@
+services:
+  registry:
+    image: registry:3
+    container_name: registry
+    environment:
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+      REGISTRY_PROXY_REMOTEURL: "https://registry-1.docker.io"
+    volumes:
+      - ./registry_data/data:/data
+    ports:
+      - 5000:5000

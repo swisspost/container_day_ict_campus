@@ -5,4 +5,5 @@ exercises/advanced/filebrowser/data
 exercises/advanced/linkwarden/pgdata
 exercises/advanced/pihole/dnsmasq.d
 exercises/advanced/pihole/pihole
+exercises/advanced/registry/registry_data
 credentials.md
