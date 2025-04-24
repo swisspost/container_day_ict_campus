@@ -42,11 +42,11 @@ Now you can visit the admin dashboard in the browser:`http://localhost:9000`
 ### Advanced
 
 - [Highly available webserver](./exersises/advanced/webserver-ha): High-available version of the static website using multiple webservers and a reverse-proxy
-- [filebrowser](./exersises/advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
-- [Gitea](./exersises/advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
-- [wikijs](./exersises/advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
-- [pihole](./exersises/advanced/pihole/): Advertisement and internet tracker blocking application
-- [linkwarden](./exersises/advanced/linkwarden/): Collaborative bookmark manager
+- [filebrowser](./exercises/advanced/filebrowser/): Basic web-based filebrowser to view/edit/share files on the web
+- [Gitea](./exercises/advanced/gitea): Lightweight but powerful git server to self-host as container (uses a mysql database)
+- [wikijs](./exercises/advanced/wikijs/): Wonderful wiki solution for a self-hosted wiki
+- [pihole](./exercises/advanced/pihole/): Advertisement and internet tracker blocking application
+- [linkwarden](./exercises/advanced/linkwarden/): Collaborative bookmark manager
 
 ### Expert
 
