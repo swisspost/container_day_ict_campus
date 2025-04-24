@@ -1,8 +1,8 @@
-advanced/gitea/*data
-advanced/wikijs/wiki.sqlite
-advanced/filebrowser/filebrowser.db
-advanced/filebrowser/data
-advanced/linkwarden/pgdata
-advanced/pihole/dnsmasq.d
-advanced/pihole/pihole
+exercises/advanced/gitea/*data
+exercises/advanced/wikijs/wiki.sqlite
+exercises/advanced/filebrowser/filebrowser.db
+exercises/advanced/filebrowser/data
+exercises/advanced/linkwarden/pgdata
+exercises/advanced/pihole/dnsmasq.d
+exercises/advanced/pihole/pihole
 credentials.md
