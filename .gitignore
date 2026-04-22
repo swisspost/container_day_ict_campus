@@ -7,3 +7,4 @@ exercises/advanced/pihole/dnsmasq.d
 exercises/advanced/pihole/pihole
 exercises/advanced/registry/registry_data
 credentials.md
+demos/compose-advanced/.env
