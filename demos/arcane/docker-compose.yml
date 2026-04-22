@@ -12,9 +12,9 @@ services:
       - APP_URL=http://localhost:3552
       - PUID=1000
       - PGID=1000
-      - ENCRYPTION_KEY= # generate using: openssl rand -hex 32
-      - JWT_SECRET= # generate using: openssl rand -hex 32
-    environment-file: .env # and save the above values in this .env file
+      - ENCRYPTION_KEY # generate using: openssl rand -hex 32
+      - JWT_SECRET # generate using: openssl rand -hex 32
+    env_file: .env # and save the above values in this .env file
     restart: unless-stopped
 
 volumes:
