@@ -5,7 +5,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - arcane-data:/app/data
-      - arcane-projects:/app/data/projects
+      - /Users/technat/Downloads/container_day_ict_campus/demos/compose-advanced/projects/:/app/data/projects
     ports:
       - '3552:3552'
     environment:

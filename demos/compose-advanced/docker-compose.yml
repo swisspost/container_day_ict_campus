@@ -26,11 +26,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql
       - postgres_dumps:/dumps
-    # environment:
-    #   # these values must come
-    #   - POSTGRES_USER
-    #   - POSTGRES_PASSWORD
-    #   - POSTGRES_DB
+    environment:
+      # these values must come
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
     env_file:
       - .env # from here
     healthcheck:
