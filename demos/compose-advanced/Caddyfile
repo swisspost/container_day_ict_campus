@@ -2,7 +2,7 @@ mattermost.technat.dev {
     reverse_proxy {
       to mattermost:8065  
 
-       health_uri /api/v4/system/ping"
+       health_uri /api/v4/system/ping
        health_interval 5s
        health_timeout 2s
        health_status 2xx
